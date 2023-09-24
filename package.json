@@ -1,0 +1,11 @@
+{
+  "name": "codecraftsmanpro",
+  "version": "1.0.0",
+  "description": "A personal portfolio of Alejandro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlejoMadMajor/shopify-theme-lho"
+  },
+  "author": "Diego Alejandro",
+  "license": "ISC"
+}
