@@ -1,0 +1,106 @@
+html {box-sizing: border-box;}
+*, *::before, *::after { box-sizing: inherit;}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #efefef;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.name-artist {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.slogan {
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.menu {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 17%;
+    z-index: 3;
+    color: black;
+    padding: 0 1%;
+}
+
+.content {
+    margin-left: 17%;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+ul.social-links {
+    display: grid;
+    list-style: none;
+    padding-left: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: end;
+    font-size: 13px;
+    border-top: 1px solid grey;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.social-icon {
+    max-width: 25px;
+    transition: color .25s cubic-bezier(.45,.3,.15,.95), opacity .25s cubic-bezier(.45,.3,.15,.95);
+}
+
+.social-icon:hover {
+    color: lightseagreen ;
+}
+
+.logo-site {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-site img {
+    width: 100%;
+}
+
+ul.navigation {
+    list-style: none;
+    padding-left: 0;
+    line-height: 3;
+}
+
+.navigation li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Usamos una función cubic-bezier personalizada */
+}
+
+.navigation li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20%;
+}
